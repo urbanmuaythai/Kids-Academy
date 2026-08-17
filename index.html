@@ -419,10 +419,19 @@
   #closing p.big{font-family:'Playfair Display'; font-style:italic; font-size:1.2rem; color:#e6dfcd; max-width:640px; margin:26px auto 0;}
   .closing-sign{margin-top:44px; font-size:.78rem; letter-spacing:.18em; text-transform:uppercase; color:var(--gold-light);}
 
+  .socials{background:var(--black); color:var(--cream); text-align:center; padding:44px 20px; border-top:1px solid rgba(255,255,255,.06);}
+  .socials-label{font-family:'Bebas Neue'; font-size:.82rem; letter-spacing:.3em; text-transform:uppercase; color:var(--gold-light); margin-bottom:22px;}
+  .social-links{display:flex; justify-content:center; flex-wrap:wrap; gap:12px;}
+  .social-link{display:inline-flex; align-items:center; gap:10px; min-width:150px; justify-content:center; padding:13px 20px; border:1px solid rgba(230,172,31,.35); border-radius:999px; color:var(--cream); text-decoration:none; font-size:.78rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase; transition:transform .25s ease,background .25s ease,color .25s ease,border-color .25s ease;}
+  .social-link svg{width:20px; height:20px; flex:0 0 20px; fill:currentColor;}
+  .social-link:hover,.social-link:focus-visible{background:var(--gold); border-color:var(--gold); color:var(--black); transform:translateY(-3px); outline:none;}
+
   footer{background:var(--black); color:#8a8272; text-align:center; padding:34px 20px; font-size:.78rem; border-top:1px solid rgba(255,255,255,.06);}
+  footer a{color:inherit; text-underline-offset:3px;}
+  footer a:hover,footer a:focus-visible{color:var(--gold-light);}
 
   @media print{
-    .side-nav,.site-header,.progress-bar,.scroll-cue{display:none !important;}
+    .side-nav,.site-header,.progress-bar,.scroll-cue,.socials{display:none !important;}
     section{padding:40px 6vw;}
   }
 
@@ -1022,8 +1031,26 @@
   </div>
 </section>
 
+<section class="socials" aria-labelledby="socials-heading">
+  <div id="socials-heading" class="socials-label">Follow Urban Muaythai</div>
+  <div class="social-links">
+    <a class="social-link" href="https://www.instagram.com/urbanmuaythaigym" target="_blank" rel="noopener noreferrer" aria-label="Follow Urban Muaythai on Instagram">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2Zm-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6Zm9.65 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/></svg>
+      Instagram
+    </a>
+    <a class="social-link" href="https://www.facebook.com/urbanmuaythai/" target="_blank" rel="noopener noreferrer" aria-label="Follow Urban Muaythai on Facebook">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 22v-8h2.7l.4-3.1h-3.1V8.9c0-.9.25-1.5 1.55-1.5h1.65V4.62a22 22 0 0 0-2.4-.12c-2.38 0-4 1.45-4 4.12v2.3H7.6V14h2.7v8h3.2Z"/></svg>
+      Facebook
+    </a>
+    <a class="social-link" href="https://www.youtube.com/channel/UCJfObE7TMGEu04NDH7eHPuA" target="_blank" rel="noopener noreferrer" aria-label="Visit Urban Muaythai on YouTube">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.55 3.6 12 3.6 12 3.6s-7.55 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.85.5 9.4.5 9.4.5s7.55 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4L15.8 12l-6.2 3.6Z"/></svg>
+      YouTube
+    </a>
+  </div>
+</section>
+
 <footer>
-  Urban Muaythai Kids Academy — Parent Handbook · www.urbanmuaythai.com
+  Urban Muaythai Kids Academy — Parent Handbook · <a href="https://www.urbanmuaythai.com/" target="_blank" rel="noopener noreferrer">www.urbanmuaythai.com</a>
 </footer>
 
 <script>
